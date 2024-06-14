@@ -1,35 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+export default function App() {
+  const features = [
+    {
+        title: "Instant Server Start",
+        description: "On demand file serving over native ESM, no bundling required!",
+        icon: "⚡️"
+    },
+    {
+        title: "Lightning Fast HMR",
+        description: "Hot Module Replacement (HMR) that stays fast regardless of app size.",
+        icon: "⚡️"
+    },
+    {
+        title: "Rich Features",
+        description: "Out-of-the-box support for TypeScript, JSX, CSS and more.",
+        icon: "🛠️"
+    },
+    {
+        title: "Optimized Build",
+        description: "Pre-configured Rollup build with multi-page and library mode support.",
+        icon: "📦"
+    },
+    {
+        title: "Universal Plugins",
+        description: "Rollup-superset plugin interface shared between dev and build.",
+        icon: "🔩"
+    },
+    {
+        title: "Fully Typed APIs",
+        description: "Flexible programmatic APIs with full TypeScript typing.",
+        icon: "🔑"
+    }
+];
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
+  return(
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+   
     </>
   )
 }
-
-export default App
